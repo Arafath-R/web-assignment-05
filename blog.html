@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- google font lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+<body class="font-lexend">
+    <header>
+        <nav class="bg-orange-50 py-6 mb-16">
+            <div class="md:container mx-auto flex justify-between md:px-10 px-4 items-center">
+                <button id="btn-home" class="btn bg-lime-400 text-xl px-7">Home</button>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="text-xl font-bold hidden md:block">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center text-xl gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <h2 class="text-gray-500 font-semibold"><span>9000</span> BDT</h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="md:container mx-auto md:px-10 px-4">
+            <h1 class="text-2xl font-bold pb-10 text-center">Imporant FAQ</h1>
+            <div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+  <div class="collapse-content">
+    <p>The Document Object Model (DOM) is a programming interface (API) for HTML and XML documents. It represents the page as a hierarchical tree structure where every element, attribute, and piece of text is a node. JavaScript uses the DOM to access and manipulate the structure, style, and content of a web page, enabling dynamic updates and interactivity.</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
+  <div class="collapse-content">
+    <p>
+        i. document.getElementById('idName'): Selects a single element by its unique id. <br><br>
+
+ii. document.querySelector('.className'): Selects the first element that matches a specific CSS selector (e.g., class, ID, or tag name). <br><br>
+
+iii. document.querySelectorAll('tagName'): Selects all elements that match a CSS selector, returning a NodeList (array-like object).</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM, and why is it useful?</div>
+  <div class="collapse-content">
+    <p>Event delegation is a technique where you attach a single event listener to a common parent element rather than attaching individual listeners to multiple child elements. <br><br>
+
+It is useful because:<br><br>
+
+i. Efficiency: It saves memory and processing power by requiring only one listener, reducing overhead.<br><br>
+
+ii. Dynamic Elements: It automatically handles events for elements that are added to the DOM after the page loads without needing to re-attach listeners.</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and styles using the DOM?</div>
+  <div class="collapse-content">
+    <p>Attributes are manipulated using methods on the element node:<br><br>
+
+i. element.setAttribute('attr', 'value'): Adds or changes the value of an attribute (e.g., src, href).<br><br>
+
+ii. element.getAttribute('attr'): Retrieves the current value of an attribute.<br><br>
+
+iii. element.removeAttribute('attr'): Removes an attribute.<br><br>
+
+Styles are manipulated via the style property:<br><br>
+
+i. element.style.backgroundColor = 'red': Sets inline CSS properties using camelCase (e.g., background-color becomes backgroundColor).<br><br>
+
+ii. element.classList.add('new-class'): The recommended way: adds, removes, or toggles CSS classes defined in a stylesheet.</p>
+  </div>
+</div>
+        </section>
+    </main>
+    <script>
+      document.getElementById('btn-home').addEventListener('click',function(){
+window.location.href = './main.html'
+})
+    </script>
+</body>
+</html>
