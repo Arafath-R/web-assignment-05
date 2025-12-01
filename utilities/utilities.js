@@ -39,7 +39,7 @@ function addToHistory(id, amount) {
     const place = document.getElementById(id).innerText
     const history = document.getElementById('history-container')
     const div = document.createElement('div')
-    div.classList.add('border', 'p-8', 'rounded-xl')
+    div.classList.add('border', 'p-8', 'rounded-xl','mb-8')
     div.innerHTML = `
         <h2 class="text-xl font-bold">${amount} Taka is Donated ${place}</h2>
         <p class="text-gray-500">${new Date()}</p>
